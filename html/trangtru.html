@@ -7,118 +7,36 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<style>
-    .mainheader{
-        background-image: url('/img/onme.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        position: relative;
-        height: 800px;
-    }
-     .header nav ul li{
-         display: inline-block;
-       
-         margin-right: 20px;
-     }
-      .header {
-          position: absolute;
-          top:20px;
-          right: 50px;
-      }
-      .header nav ul{
-          overflow-y: hidden;
-          list-style: none;
-      }
-      .header nav ul li a{
-            text-decoration: none;
-            color: #fff;
-      }
-      .header nav ul li:hover,.header nav ul li a:hover{
-        cursor: pointer;
-        border-bottom: 2px solid #FFF;
-      }
-      .download{
-       position:absolute;
-       bottom: 10%;
-       right: 20%;
-       left: 20%;
-       text-align: center;
-        }
-        .download,.download1 img{
-           height: 46px;
-        }
-        .mainbody{
-            background-color: #FFFFFF;
-            padding: 30px;
-        }
-        .video{
-            background: #727272;
-            border-radius: 40px;
-            width: 200px;
-            height: 400px;
-        }
-        .videogallyre{
-            width: 350px;
-            height: 200px;
-             background: #727272;
-                border-radius: 20px;
-        }
-        .gallery{
-            text-align: center;
-        }
-        .row{
-            margin-top: 30px;
-        }
-        lable{
-            font-size: 30px;
-            color:rgb(241, 77, 77);
-        }
-        .hotvideo,.livestream,.khampha,.gallery{
-            display: flex;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-        .noidung{
-            margin: 70px 200px 100px 200px;
-
-            text-align: center;
-            line-height: 30px;
-            width: 40%;
-        }
-        .footersmall{
-            display: flex;
-            padding-top:30px;
-         
-        }
-        .footersmall img{
-            width: 150px;
-            border-radius: 50%;
-        }
-        .footerbig{
-            position: relative;
-        }
-        .footer{
-          background-color:   #FCFCFC;
-          padding: 50px ;
-        }
-        .footersmall1{
-            border-bottom:1px solid #eeecec;
-            text-align: center;
-            padding-bottom:30px ;
-        }
-        .lienhe{
-            display: flex;
-            margin-left: 400px;
-        }
-        .lienhe p{     
-            margin-right: 50px;
-        }
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    </head>
 <body>
-    <div class="mainheader">
-        <div class="header">
-            <nav >
+    <div class="main">
+        <div class="main-header">       
+                <img src="../img/onme.png"  class="main-header-banner">     
+            <header class="header" id="scrollheader">
+                <img src="../img/onmesmall.jpg" alt="" />
+                <label for="check" class="open">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <nav class="pc">
+                    <ul>
+                        <li><a href="">wellcom</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Live stream</a></li>
+                        <li><a href="">Discover</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <input type="checkbox" id="check" class="opencheck" style="display: none" />
+            <label for="check" class="overlay"></label>
+            <nav class="mobie">
+                <label for="check" class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <input type="checkbox" class="opencheck" id="check" style="display: none" />
                 <ul>
                     <li><a href="">wellcom</a></li>
                     <li><a href="">Home</a></li>
@@ -127,150 +45,101 @@
                     <li><a href="">Gallery</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="download">
-            <img src="/img/chplay.png" alt="">
-            <img src="/img/app-store.png" alt="">
-        </div>
-    </div>
-    <div class="mainbody">
-        <div class="hotvideo">
-            <div class="video">
+            <div class="download">
+                <img src="../img/chplay.png" alt="">
+                <img src="../img/app-store.png" alt="">
             </div>
-            <div class="noidung">
-                <label for="">
-                    <i class="fa-solid fa-house-heart"></i>
-                </label>
-             
-                <p>Hot Video</p>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        </div>   
+        <div class="main-video">    
+            <div class="main-video-left">
+                <div class="video">
+                </div>
+                <div class="article-left"> 
+                    <img src="../img/hotvideo.jpg" alt="">
+                    <p>Hot Video</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>         
             </div>
-        </div>
-        <div class="livestream">
-            <div class="noidung">
-                <label for="">
-                    <i class="fa-solid fa-circle-video"></i>
-                </label>
-                <p>Hot Video</p>
-                <p>Hot Video
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <div class="main-video-right">
+                <div class="article-right">
+                    <img src="../img/livestream.jpg" alt="">
+                    <p>Livestream</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="video">
+                </div>       
             </div>
-            <div class="video"> 
-            </div>
-           
-        </div>
-        <div class="khampha">
-            <div class="video">
-                
-            </div>
-            <div class="noidung">
-                <label for="">
-                    <i class="fa-solid fa-camera-retro"></i>
-                </label>
-              
-                <p>Khám phá</p>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            </div>
+            <div class="main-video-left">
+                <div class="video">
+                </div>
+                <div class="article-left">
+                    <img src="../img/khampha.jpg" alt="">
+                    <p>Khám phá</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>              
+            </div>     
         </div>
         <div class="gallery">
+            <div class="gallyre-image">
+                <img src="../img/gallyre.jpg" alt="">
+                 <p>Gallery</p>
+            </div>
             <div class="container">
-                <p style="font-size: large;text-transform: uppercase; font-weight: 500;" >gallery</p>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="videogallyre">
-                        </div>
-                        <div>
-                            <p>Lorem Ipsum</p>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="col-md-4">
+                        <div class="gallyre-video">
+                
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="videogallyre">
-                        </div>
-                        <div>
-                            <p>Lorem Ipsum</p>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="col-md-4">
+                        <div class="gallyre-video">
+                
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="videogallyre">
-                        </div>
-                        <div>
-                            <p>Lorem Ipsum</p>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="col-md-4">
+                        <div class="gallyre-video">
+                
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="videogallyre">
-                        </div>
-                        <div>
-                            <p>Lorem Ipsum</p>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="col-md-4">
+                        <div class="gallyre-video">
+                
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="videogallyre">
-                        </div>
-                        <div>
-                            <p>Lorem Ipsum</p>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="col-md-4">
+                        <div class="gallyre-video">
+                
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="videogallyre">
-                        </div>
-                        <div>
-                            <p>Lorem Ipsum</p>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="col-md-4">
+                        <div class="gallyre-video">
+                
                         </div>
                     </div>
                 </div>
             </div>
            
         </div>
-    </div>
-    <div class="footer">
-        <footer class="footerbig">
-            <div class="footersmall1">
-                <p>get the app</p>
-                <div class="download1">
-                    <img src="/img/chplay.png" alt="">
-                    <img src="/img/app-store.png" alt="">
-                </div>
-            </div>
-            
-            <div class="footersmall">
-                <img src="/img/onmesmall.jpg" alt="">
-                <div class="lienhe">
-                    <p>
-                        Contact
-                        <br>
-                        abcdefg@onme.com
-                        <br>
-                        abc.1234@onme.com
-                        <br>
-                        abc@onme.com
-                        <br>
-                        abc@onme.com
-                    </p>
-                    <p>
-                        Legal
-                        <br>
-                        Terms of Service
-                        <br>
-                        Privacy Policy
-                        <br>
-                    </p>
-                </div>
-               
-            </div>
-           
-        </footer>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  function action_scroll() {
+      if(window.scrollY>100){
+           $('#scrollheader').addClass('headerscroll')
+        }
+    else{
+             $('#scrollheader').removeClass('headerscroll')
+    }
+         
+}
+    $(document).ready(function () {
+              window.addEventListener("scroll", action_scroll);
+        });
+</script>
 </html>
